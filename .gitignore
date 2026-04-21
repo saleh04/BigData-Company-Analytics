@@ -25,6 +25,9 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+.mypy_cache/
+.pytest_cache/
+venv/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -205,3 +208,26 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+خطوة ممتازة! الـ Commits المتقسمة والمنظمة بتدي انطباع إنك فاهم Version Control صح، وبتبين تسلسل تفكيرك في بناء البروجكت.
+
+عشان نرفع الشغل بنظافة، لازم أول حاجة نتأكد إننا مش هنرفع فولدر venv (لأنه تقيل جداً ومفيش داعي رفعه). خلينا نمشي خطوة خطوة:
+
+الخطوة الأولى: إعداد Git وملف التجاهل (.gitignore)
+اتأكد إنك فاتح الـ Terminal جوه المجلد الرئيسي للمشروع (big-data-company-analytics).
+
+اكتب الأمر ده عشان تبدأ تتبع الملفات:
+
+
+
+# Environments
+venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
